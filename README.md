@@ -47,4 +47,22 @@
    git clone https://github.com/yourusername/U-Snap.git
    cd U-Snap
    ```
+2. Build and run the backend using Docker:
+   ```bash
+   docker build -t u-snap-backend -f backend/go.dockerfile .
+   docker run -p 8000:8000 u-snap-backend
+   ```
+### Frontend Setup
+1. Navigate to the frontend folder:
+   ```bash
+   cd frontend
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Create an .env.local file and add the following environment variables:
+   ```bash
+   NEXT_PUBLIC_API_URL=http://localhost:8000
+   ```
 
