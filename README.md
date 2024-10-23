@@ -32,6 +32,7 @@
         |-- index.tsx           # Main page of the application
     |-- public
         |-- [backendName]logo.svg  # Dynamic backend logos
+```
 
 ## Installation
 ### Prerequisites
