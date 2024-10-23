@@ -40,3 +40,11 @@
 - Go installed for local backend development.
 - Node.js installed for frontend development.
 - PostgreSQL for database setup.
+
+### Backend Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/U-Snap.git
+   cd U-Snap
+   ```
+
