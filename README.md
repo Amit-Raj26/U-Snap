@@ -91,10 +91,6 @@
 - `PUT /api/{backendName}/users/:id`: Update an existing user.
 - `DELETE /api/{backendName}/users/:id`: Delete a user.
 
-## Screenshots
-
-*(Add screenshots here)*
-
 ## Future Enhancements
 
 - Add more backend options and dynamic support.
