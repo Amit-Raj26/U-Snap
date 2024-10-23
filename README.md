@@ -36,7 +36,7 @@
 
 ## Installation
 ### Prerequisites
--Docker installed on your system
--Go installed for local backend development
--Node.js installed for frontend development
--PostgreSQL for database setup
+- Docker installed on your system.
+- Go installed for local backend development.
+- Node.js installed for frontend development.
+- PostgreSQL for database setup.
