@@ -61,8 +61,46 @@
    ```bash
    npm install
    ```
-3. Create an .env.local file and add the following environment variables:
+3. Create an `.env.local` file and add the following environment variables:
    ```bash
    NEXT_PUBLIC_API_URL=http://localhost:8000
    ```
+4. Run the frontend:
+   ```bash
+   npm run dev
+   ```
+### Database Setup
+1. Set up PostgreSQL and create a database:
+   ```bash
+   psql -U postgres
+   CREATE DATABASE u_snap_db;
+   ```
+2. Update the connection string in the Go backend or use Docker with environment variables to point to the database.
 
+## Usage
+
+1. Start the backend server using Docker or `go run main.go`.
+2. Start the frontend with `npm run dev`.
+3. Visit [http://localhost:3000](http://localhost:3000) in your browser to interact with the app.
+4. Create, update, and delete users using the form and buttons provided in the UI. User data is displayed in dynamic tiles.
+
+## API Endpoints
+
+- `GET /api/{backendName}/users`: Fetch all users.
+- `POST /api/{backendName}/users`: Create a new user.
+- `PUT /api/{backendName}/users/:id`: Update an existing user.
+- `DELETE /api/{backendName}/users/:id`: Delete a user.
+
+## Screenshots
+
+*(Add screenshots here)*
+
+## Future Enhancements
+
+- Add more backend options and dynamic support.
+- Implement search and filtering for user data.
+- Add pagination for large data sets.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
